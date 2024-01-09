@@ -1,0 +1,104 @@
+=====================
+Day 01
+=====================
+
+Development team activities:
+---------------------------------------
+--> Development team consists of developers.
+--> Developers might use any kind of programming language (java, .net, python, golang...)
+
+1. Understand the client requirements.
+2. Based on the requriements of the client, the dev team will design the project.
+3. The code required for the project will be developed.
+4. Test the programs and if any bugs are found, the bugs shall has to be fixed.
+5. Keep the (updated) code in to a common place (repository - github) which is accessible both by the Dev Team and Ops Team.
+
+IT Ops team activities:
+---------------------------------------
+As a DevOps engineer we will work in Ops Team
+1. Take the code from repository.
+2. Creation of infrastructure (servers, DBs, storage places - S3) required for the project - Terraform.
+3. Manage the configuration
+	servers - 10 .... After a month, the requirement changes to 20 servers
+	2 Core and 8 GB... 8 Core and 1 TB
+4. Setup some servers for security purposes.
+5. Create the pipelines (CI & CD) - Build & Deployment
+6. Deliver the project to the client.
+7. Manage and monitor the infrastructure and application(s)
+
+SDLC
+---------
+---> Software Developement Life Cycle
+---> The process of developing and delivering a s/w project is called as SDLC
+
+Phases in SDLC:
+-------------------------
+1. Requirement gatherings (Dev, IT Ops, DB....) (Python, SQL...)
+2. Requirement analysis 
+3. Design and Development/Planning
+4. Coding/Implementation of code
+5. Testing
+6. Deployment
+7. Deliver the project
+8. Maintenance of the project
+
+Methodologies available to develop a project:
+----------------------------------------------------------
+1. Waterfall model (Oldest)
+---> It is a linear methodology
+--->Requirements are fixed
+---> Client involvement is very less
+---> Client can see the end project only after the complete development and deployment.
+
+2. Agile model (Latest)
+---> It is a way to manage the project by dividing into serveral phases/SPRINTS
+---> It is an iterative approach
+---> Client involvement is very high
+---> Client can see the output at the end of each sprint.
+---> For every sprint, we can get the feedback from the client.
+---> Requirements are not fixed. Budget is also not fixed.
+
+DevOps tools - Overview
+----------------------------------
+To automate the build and deployment process, we will use below tools;
+1. Build tools - ANT/Maven/Gradle
+2. Repository tools - SVN/GitHub/BitBucket
+3. Code review tools - Sonarqube, Sonarlint, PMD
+4. Code deployment tools - Jenkins, UDeploy
+5. Configuration tools - Chef, Ansible
+6. Containarization tool - Docker
+7. Orchestration tool - Kubernetes
+8. Monitoring tools - Prometheus, Grafana, Nagios
+9. Project management tools - Jira
+10. Infrastucture development tool - Terraform
+
+Pre-requisite: Linux 
+
+
+*********************************************************************
+How to Create AWS Account?
+https://www.youtube.com/watch?v=E3M2GA0A7nI&t=2s
+*********************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+=========================================
+Day 04
+=========================================
+15. How to remove a directory?
+=> If the directory is empty, we can delete that directory using "rmdir <directory-name>"
+
+=> If the directory is not empty, and if you want to delete the files inside a directory along with the directory itself, then
+rm -r <directory-name>
+
+16. How to rename a file or a directory?
+=> mv command is used to rename a file
+Syntax: mv <name of the file you want to change> <modified name>
+Ex: mv aws.txt devops.txt
+Note: To move the files from one directory to another directory, we can use "mv" command.
+
+17. How to copy the data from one file to another file?
+=> Ex: aws.txt (AWS is having 250+ services)
+		devops.txt
+Syntax: cat <file1 name> > <file2 name>
+Ex: cat aws.txt > devops.txt
+
+Note: If File 2 is not available, it will create the file2 and then copies the content from file 1
+
+18. How to copy the data from 2 files to a third file?
+Syntax: cat <file1> <file2> > <file3>
+
+19. How to create a copy of a file?
+Syntax: cp <file1> <file2>
+Note: "cp" is used only for one file
+	"cat" is used for copying the content from multiple files to a single file
+
+20. How to move a file from one directory to another directory?
+Syntax: mv <path> <path>
+
+21. How to see the first 10 lines available in a file?
+$ head <filename>
+$ head -n <linenumber> <filename>
+The above command will display the contents from top to a specific line number
+
+22. How to see the last 10 lines available in a file?
+$ tail <filename>
+$ tail -n <linenumber> <filename>
+The above command will display the contents from last to a specific line number
+
+Note: By default, whenever we execute "head" and "tail" commands, it will display the first/last 10 lines only.
+
+23. How to see the content available in a specific line?
+$ tail +12 <filename>
+$ head +10 <filename>
+
+
+24. How to know the number of words available in a file?
+$ wc <file name>
+Ex: 7 14 70
+First number represents the number of lines available
+Second number represents the number of words available
+Third number represents the number of characters available
+
+25. How to search for a word in Linux OS?
+=> "GREP" command is used to search for a word
+=> Global Regular Expression Print.
+=> GREP will process the text line by line and prints the lines which contains the given word
+
+Syntax: grep '<wordname>' <filename>
+The above command is case sensitive
+
+To ignore the case sensitiveness, use the below command
+grep -i '<wordname>' <filename>
+
+To search for a word in all the files available in Linux OS
+grep -i '<wordname>' *
+
+26.  How to work with "vi" command?
+=> Text editors are used to edit the files in linux OS.
+=> Default text editor available in Linux OS is "vi" (Visual Editor)
+
+vi <filename>
+It will create the file with the "filename" that you have given and allows us to write the content inside it.
+Step 1: vi kastro.txt
+Step 2: Press 'i' to go to the insert mode
+Step 3: Write the content
+Step 4: :wq
+Step 5: cat kastro.txt (or) vi kastro.txt - This will display the content inside the kastro.txt file.
+
+Note: After clicking on 'escape' button, if we give :q! it will directly comeout of the file without saving the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

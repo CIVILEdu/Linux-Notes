@@ -1,0 +1,71 @@
+=========================================
+Day 02
+=========================================
+Operating System:
+------------------------------
+---> OS is a s/w which is used to interact with the computer.
+---> It will act as a mediator b/w the users and computer h/w components.
+---> OS is mandatory to use any computer. It provides an environment to run the applications.
+
+Types of OSs:
+----------------------
+1. Windows:
+---> Windows OS is a single user based OS.
+---> Paid s/w.
+---> Developed by Microsoft and it is purely recommended for personal use.
+---> It is GUI (Graphic User Interface) based.
+
+2. Linux:
+---> Linux OS is a multi user based OS.
+---> Linux is opensource s/w.
+---> Linux is developed by Linus Torvalds in 1991.
+---> It is CLI (Command Line Interface) based.
+
+Linux distributions/flavours:
+--------------------------------------------
+Redhat Linux, Ubuntu, Amazon Linux, Cent OS, Fedora....
+
+To work with Linux OS, you need AWS Account, Launch an EC2 Instance
+
+How to launch an EC2 Instance?
+---------------------------------------------------
+EC2 - Elastic Compute Cloud
+Using EC2 we can launch virtual servers.
+
+Login to AWS Account -----> Go to "EC2" Service -----> Launch a Linux based EC2 Instance
+
+How to connect to the instance using MobaXTerm s/w:
+----------------------------------------------------------------------------
+Download link for MobaXTerm s/w:
+https://mobaxterm.mobatek.net/download-home-edition.html
+
+1. Using the 3rd party software (MobaXTerm - .pem, Putty and PuttyGen - .ppk)
+2. Directly by using AWS Instance Connect option available in AWS Console
+
+Open MobaXTerm s/w -----> Session -----> SSH -----> Remote Host: <paste the Public IPv4 address of Instance> -----> Advanced SSH Settings -----> "Check" use private key option -----> Click on "File" icon -----> Select the ".pem" file you have downloaded/created while launching the instance -----> OK -----> You will see "login as" -----> By default, the login username for all Linux based instances is "ec2-user" -----> You will see "Bird" Logo
+
+Note:
+--------
+Freetier - 650 free hours of instances per account per month
+
+AWS Account - 10 Instances 
+				Per instance, 65 free hours
+
+
+Note: 
+----------
+Make sure to stop the instance after practice is completed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
