@@ -1,0 +1,135 @@
+=========================================
+Day 06
+=========================================
+33. How to work with user accounts in the Linux OS?
+
+=> Linux is a multi user based OS.
+=> By default, in Linux OS, we have two types of users;
+	1) ec2-user
+	2) root user
+=> Within one linux instance we can create multiple user accounts.
+=> Every linux instance will have a root account (super user).
+
+34. How to switch from ec2-user to root user?
+$ sudo su
+
+34. How to switch from root user to ec2-user?
+$ exit
+
+Note: For every user account, 'home' directory will be available.
+
+35. How to create custom users?
+$ sudo useradd <UserName>
+
+36. How to verify user account details?
+$ id <UserName>
+
+37. How to switch to a custom user?
+$ sudo su <UserName>
+
+38. How to see the list of users created?
+=> In order to see the list of users created, first go to '/home' directory.
+		cd ..
+=> ls -l
+Now you will see the list of users created.
+
+39. How to create a group?
+$ sudo groupadd <GroupName>
+
+40. How to see the list of groups availale?
+$ cat /etc/group
+
+41. How to add an user to a group?
+$ sudo usermod -aG <GroupName> <UserName>
+
+To verify, the user has been added to the group or not;
+id <UserName>
+
+42. How to remove an user from a group?
+$ sudo gpasswd -d <UserName> <GroupName>
+
+43. How to delete a group?
+$ sudo groupdel <GroupName>
+
+44. To see the list of last 3 user accounts
+$ tail -3 /etc/passwd
+
+45. To see the list of last 3 groups
+$ tail -3 /etc/group
+
+46. To see all the users available in a particular group
+$ sudo lid -g <GroupName>
+
+---------------------------------
+47. chown command
+---------------------------------
+=> It is used to change the file/directory ownership.
+
+Steps:
+1. Create a file ---> touch k1.txt
+2. ls -l ---> You will see "ec2-user                ec2-user"
+3.				             |				    |
+				     Owner Name	    Group Name
+4. To change the ownership of a file
+$ sudo chown <Owner/User Name> <FileName>
+				 (or)
+$ sudo chown <UserID> <FileName>
+
+Note: To know the userid of an user; id <UserName>
+
+5. To change the group of a file
+$ sudo chown :<GroupName> <FileName>
+
+Note: To see the list of groups; cat /etc/group
+
+48. If you want to remove any s/w from linux OS, just add 'sudo' before any command. It will make to act as a root user.
+
+49. Package managers in linux
+=> It a tool that allows users to install/uninstall/update s/w on an OS.
+Ex: yum, apt, rpm, deb......
+yum install git ---> For Linux instances
+apt install git ----> For Ubuntu instances
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+From next session: MAVEN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
