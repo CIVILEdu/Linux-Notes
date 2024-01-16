@@ -1,0 +1,79 @@
+=========================================
+Day 09
+=========================================
+Maven Terminology:
+-------------------------------
+=> Archetype: It represents what type of project we are going to create.
+	1) maven-archetype-quickstart ---> It represents the standalone application creation.
+	2) maven-archetype-webapp ---> It represents the web application creation.
+		There are 1000+ types of architypes 
+
+=> group ID: It represents the company name or a project name.
+PhonePe
+Ex: TCS-PhonePe
+
+=> Artifact ID: It represents the project name or project module name.
+PhonePe ---> Transactions, Recharge, Tickets, Bills...
+Ex: PhonePe-Transactions
+
+=> Packaging: It represents how you want to package your application i.e either war file or jar file.
+
+.java file ----> .class file ----> Execute (JVM) ----> Output
+1000 .java files ----> Package (jar or war) ----> Execute (JVM) ----> Output
+
+----------------------------------------------------------------
+How to create a standalone application using Maven
+----------------------------------------------------------------
+mvn archetype:generate -DgroupId=in.VishnuTech -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+----------------------------------------------------------------
+How to create a web application using Maven
+----------------------------------------------------------------
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=in.VishnuTech -DartifactId=02-Maven-WebApp -DinteractiveMode=false
+
+------------------------------------------------------------------------------------
+How to create initial project folder structure for standalone application
+------------------------------------------------------------------------------------
+D Drive ---> Create a folder (01-Standalone-App) ---> Open Command Prompt in the created folder path ---> Execute the below command
+mvn archetype:generate -DgroupId=in.VishnuTech -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+=> Once the project folder structure is created, we will see two things
+		1. SRC Folder
+			1.1. Main Folder - java\in\VishnuTech\App.java ---> In ".java" file app source code will be written.
+			1.2. Test Folder - java\in\VishnuTech\AppTest.java ---> In "AppTest.java" file, code testing (J-Unit Test) related info.
+		2. pom.xml File
+			Without pom.xml file maven will not work. Whatever work we are going to do in mavem, everything will be communicated using 				pom.xml file only.
+
+------------------------------------------------------------------------------------
+How to add dependencies in the pom.xml file
+------------------------------------------------------------------------------------
+
+https://mvnrepository.com/ ---> Search for required dependency (Spring) ----> Copy the syntax and paste in the pom.xml file. ----> Save the file and exit.
+
+Maven will download the dependencies added in the pom.xml.
+
+---------------------------------------------------------------------------------
+How maven will download these dependencies in the backend?
+---------------------------------------------------------------------------------
+MAVEN REPOSITORIES
+=> Maven will download any dependency using a concept called repository.
+=> In Maven, we have 3 types of repositories:
+	1. Central Repo. - Apache Organisation
+	2. Remote Repo. - Individual company (JFROG)
+	3. Local Repo. - Our PC
+
+Next Session: MAVEN GOALS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
