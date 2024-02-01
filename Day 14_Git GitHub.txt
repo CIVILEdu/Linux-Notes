@@ -1,0 +1,36 @@
+=========================================
+Day 14
+=========================================
+GIT STASH
+----------------------
+Whenever we are working with GIT commands, always open the gitbash in the place where the .git folder is available.
+
+10.00 AM - TL has assigned you some task
+10.10 AM - You started working on the task
+12.00 PM - TL has assigned a new task, asking you to complete the work on immediate basis.
+You should bench the previous work - git stash
+
+10.00 AM - Add two dependencies in the pom.xml
+You started adding the dependencies (You have added only one dependency so far)
+10.30 AM - New Task: Create a file and add the content inside it
+You have to bench the work of adding dependencies by using git stash
+10.40 AM - You started working on new task and 11.00 AM you completed the new task.
+11.10 AM - You have to resume you previous work
+
+GIT BRANCHES
+---------------------------
+=> By default, whenever we create a repo., we will get a "main" branch
+=> Branches are used to maintain the separate code bases for our project
+=> In git, we can create multiple branches
+=> The advantage of creating multiple branches is in the same repo., we will maintain separate spaces for each team
+
+
+
+
+
+
+
+
+
+
+

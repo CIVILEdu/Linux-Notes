@@ -1,0 +1,38 @@
+=========================================
+Day 17
+=========================================
+Code ---> Package (Maven) ---> Repo. (GITHUB) ---> Deploy (Webserver - End users will access our application)
+
+Environments
+----------------------------
+=> The platform which is used to run an app is known as enviroment.
+=> In real-time we will have multiple envi. based on the project.
+=> Types of envi.: Dev, SIT, UAT, Pilot, Prod
+=> Developers will use Dev envi. for integration testing.
+=> For a project, we will have multiple developers to write the source code for our app.
+=> Each developer will develop/write some code. Whatever the code is developed by each developer, it is first tested in developers PC. The process of testing the code in developer system is called as UNIT TESTING (J-UNIT). Once the code is tested, developers will push the code into the central repo. (GITHUB).
+=> In git repo we will maintain different branches like main, dev, feature, uat, sit, release. Here each branch acts as a separate code base. All the developers will be connected to the same repo. but the branches might get differ based on the team.
+=> When the developers are going to push the code into the repo., that code will get integrated into the repo.
+Dev 1 --- Code 1 --- Java 7   --- In PC (Code might work)
+Dev 2 --- Code 2 --- Java 17 --- In PC (Code might work)
+Dev 3 --- Code 3 --- Java 21 --- In PC (Code might work)
+=> Hence we will prepare the envi. only for the developers which is called as "DEV" Envi. Whatever the code is developed by the developers that code will be deployed to dev envi., where the developers will test the code by integrating with other developers code.
+=> Once the developers have completed the coding, that code will be pushed to the central repo., then that code will be deployed into the dev envi. Now developers will test the code in dev envi. Once developer completes the testing, we are going to deploy the code into one more envi. whcih is called as SIT envi. (System Integration Testing). We will have a testing test for our project, who are going to check all the functionalities of the project.
+=> Testing team will identify the bugs in the project, if any, and they will report the bugs using a tool which is called JIRA. Then developers will fix the bugs and update the code, and then the code is again sent to the repo., then the code will be sent to the Dev envi. From there the code is sent to the SIT envi. Testing team will again test the updated code. 
+=> Once the testing team gives approval, then we will deploy the code into one more envi. known as UAT envi. (User Acceptance Testing). Finally, the client should satisfy the out of the app. Upon acceptance of the client, then the code will go LIVE. 
+=> In some companies, client will chose to have the application used by few people. This stage is called pre-production stage. (PILOT envi.).
+=> Once the pilot envi is successfull, then we will make the app available for LIVE (PROD envi.) Public users will access the appl. whcih is running in the prod envi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

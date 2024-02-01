@@ -1,0 +1,28 @@
+=========================================
+Day 13
+=========================================
+
+How to unstage a staged file?
+----------------------------------------
+git restore --stage <FileName>
+
+Note: Before working with the above command, create a file and add it to the staging area.
+
+Note: "Restore" is a polymorphic command. It changes based on file status.
+1. When the file is staged, "restore" command is used to unstage the file.
+2. When the file is unstaged, "restore" command is used to remove the changes in the file
+
+-----------------------------------------------------------------------------------------------
+How to push the maven standalone application into the central repo (GITHUB)?
+-----------------------------------------------------------------------------------------------
+Go inside the maven app folder in your PC.
+Open gitbash
+git init
+
+
+
+
+
+
+
+

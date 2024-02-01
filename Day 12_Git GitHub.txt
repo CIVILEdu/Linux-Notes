@@ -1,0 +1,82 @@
+=========================================
+Day 12
+=========================================
+How many ways are there to connect/work with GITHUB?
+-------------------------------------------------------------------------
+1. Local computer - git bash
+2. EC2 Instance
+3. Working with "vi" editor
+4. Working with github
+
+Developer 1 - Local computer (git bash)
+Developer 2 - EC2 Instance (Install git)
+
+How to install git in the EC2 instance?
+-------------------------------------------------
+$ sudo yum install git -y
+$ git --version
+
+GIT Stages:
+------------------
+1. Working directory - Create 100 files
+2. Staging area - Add these 100 files
+3. Repository - Commit the 100 files
+
+Working directory -----> Staging area (git add <filename>)
+Staging area  -----> Repository (git commit)
+
+Note: All the commands in git will always start with "git"
+
+---------------------------------
+How to initialize the git?
+---------------------------------
+git init
+It will create a .git folder (hidden)
+
+
+Working with GIT & GITHUB
+------------------------------------------
+Create a folder
+Open gitbash in that folder
+Configure the username and email
+Initialize the empty git repo - git init (You will see ".git" hidden folder)
+Create a file - touch f2.txt
+Add content in the file - cat > f2.txt (This is day 2 of git classes)
+git status (You will see the file name in red colour. It indicates the file is available only in the working directory and hence they are untracked)
+Add the file to the staging area - git add <FileName>
+Check the status of the file - git status (You will see the file name in green colour. It indicates the file is added to the staging area)
+Commit the file to the repository area - git commit -m "<CommitMessage>" <FileName>
+git status (Nothing to commit, working tree clean)
+git push <FileName>
+(If you are pushing the file for the first time, git will ask you to enter username and password of github account.)
+Note: While entering the password, you will not be able to see the password
+
+--------------------------------------------------------------------
+How to clone the github repository to the local system?
+--------------------------------------------------------------------
+git clone <Repo. URL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

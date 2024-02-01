@@ -1,0 +1,38 @@
+=========================================
+Day 15
+=========================================
+Branch Merging
+----------------------------
+=> The process of merging the changes from one branch to another branch is called branch merging
+=> We will use PULL REQUEST for branch merging
+B1---10 files
+B2---5 files
+=>
+
+GIT MERGE Vs GIT REBASE
+-----------------------------------------
+=> These two commands are used to merge the changes from one branch to another branch
+=> The difference lies in the logs of the files
+=> Commit history is preserved when you do git merge. You can see the details of who have commited the changes
+=> If you want to preserve the commit histry, then you have to use git merge.
+
+Steps:
+git init ---- Master
+created m1 file
+Created a feature branch from master
+switch to feature branch
+created f1 file
+
+Master: m1 file, Feature: m1 file and f1 file
+Switch to master branch
+created m2 file
+
+https://github.com/CIVILEdu/02-Maven-Web-App.git
+
+
+
+
+
+
+
+

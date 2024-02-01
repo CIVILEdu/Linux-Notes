@@ -1,0 +1,35 @@
+=========================================
+Day 16
+=========================================
+GIT PULL
+----------------------------
+=> GIT PULL is used to get the latest code changes into your local system.
+=> GIT PUSH is used to send the changes to the central repo (GITHUB)
+
+What is the difference b/w PULL and CLONE?
+Clone is used to get the complete repo. and Pull is used to get only the lastest changes.
+
+========================
+
+1. VCS, Need for GIT, Types of VCS
+2. Installing GIT, Configuring the username and email, Initializing a .git folder
+3. GIT Stages 
+4. GIT Commands
+5. Working GITHUB
+6. Pushed the Maven app into the repo.
+7. Advanaced commands in the git and github 
+
+=================
+Environments
+
+Tomcat - Manual
+
+Automated - Jenkins
+
+
+
+
+
+
+
+

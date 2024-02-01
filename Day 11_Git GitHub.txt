@@ -1,0 +1,106 @@
+=========================================
+Day 11
+=========================================
+GIT
+--------
+=> GIT - Global Information Tracker
+=> GIT is also called as Version Control System or Source Code Management
+Ex: Instagram
+	Version 1 - 2015 February 
+	Version 1.1 - 2015 November ---- 2015 December (Bugs)
+	Version 2 - January 2016
+	Version 8 - January 2024
+=> GIT was developed by Linus Torvalds in the year 2005.
+=> GIT tracks all the types of files and codes on daily basis.
+=> The idea of using the of the VCS is to keep the developers and devops engineers in touch with eachother.
+=> VCS allows for colloborative development.
+=> VCS also helps us to go to the previous version of the code (Rollbacks)
+
+Types of VCS:
+--------------------
+1. Local VCS
+2. Centralised VCS
+3. Distribute VCS
+
+Developers and DevOps engineers mostly uses DVCS only.
+
+Some of the DVCS available in the market are: GIT, BIT Bucket, Subversion, Mercurial, Perforce.
+
+GITHUB will act as a host for our code.
+
+GIT vs GITHUB
+------------------------------
+GIT:
+=> GIT is a DVCS which run locally in our PC.
+=> GIT is a software
+=> GIT a command line tool
+=> GIT is maintained by Linux
+=> GIT is an open-source and available for free
+=> GIT is installed locally on our pC
+
+GITHUB:
+=> GITHUB is a central repo, where all the team members will be connected with eachother.
+=> GITHUB is a service
+=> GITHUB is GUI based
+=> GITHUB is maintained by Microsoft
+=> GITHUB is a free-tier and also for pay-for-use tier.
+=> GITHUB is hosted on web
+
+Installation of GIT
+------------------------------
+https://www.git-scm.com/download/win
+
+How to check whether git is installated or not ----> Open Command Prompt ----> git --version
+
+How to create a github account
+---------------------------------------------
+www.github.com
+
+How to configure the GIT?
+--------------------------------------
+Create a folder in your laptop ----> Rightclick ----> Open GITBASH here ----> Click on it ----> A terminal gets opened
+
+=> Configuration of GIT is a one-time activity.
+=> We need to configure with our email id and username. 
+
+Dev 1 ----> 100 lines of code
+Dev 2 ----> 200 lines of code
+Dev 3 ----> deleted 50 lines of code
+    |
+    |
+    |
+Dev 10
+
+=> Configuration of username:
+git config --global user.name <username>
+
+=> Configuration of email:
+git config --global user.email <email>
+
+
+To verify whether user name and email id are configured or not?
+ 
+git config user.name
+git config user.email
+
+Creation of a repository in github
+-----------------------------------------------------
+Types of repositories in github:
+	1. Public repo - Free
+	2. Private repo - Charge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
